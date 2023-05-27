@@ -7,8 +7,7 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
-
-
+import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
 
 @NgModule({
   declarations: [
@@ -17,17 +16,16 @@ import { SearchBoxComponent } from './components/search-box/search-box.component
     HomePageComponent,
     SidebarComponent,
     SearchBoxComponent,
+    LoadingSpinnerComponent
   ],
-  imports: [
-    CommonModule,
-    RouterModule,
-  ],
+  imports: [CommonModule, RouterModule],
   exports: [
     AboutPageComponent,
     ContactPageComponent,
     HomePageComponent,
     SidebarComponent,
     SearchBoxComponent,
-  ]
+    LoadingSpinnerComponent
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}
